@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <form action="action_page.php" style="border: 1px solid #ccc">
+      <div class="container">
+        <h1>Форма реєстрації</h1>
+        <p>Будь ласка, заповніть цю форму, щоб створити обліковий запис.</p>
+        <hr />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Введіть вашу пошту"
+          name="email"
+          required
+        />
+
+        <label for="psw"><b>Пароль</b></label>
+        <input
+          type="password"
+          placeholder="Введіть пароль"
+          name="psw"
+          required
+        />
+
+        <label for="psw-repeat"><b>Повторити пароль</b></label>
+        <input
+          type="password"
+          placeholder="Повторити пароль"
+          name="psw-repeat"
+          required
+        />
+
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Запам'ятати мене
+        </label>
+
+        <p>
+          Створюючи обліковий запис, ви погоджуєтеся з нашим
+          <a href="#" style="color: dodgerblue">Умови та конфіденційність</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="reset" class="cancelbtn">Відмінити</button>
+          <button type="submit" class="signupbtn">Реєстрація</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

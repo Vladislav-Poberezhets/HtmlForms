@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-50">
+                <h3>Адреса для виставлення рахунку</h3>
+                <label for="fname"
+                  ><i class="fa fa-user"></i> Прізвище, ім'я та по
+                  батькові</label
+                >
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Повне ім'я"
+                />
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Введіть ваш email"
+                />
+                <label for="adr"
+                  ><i class="fa fa-address-card-o"></i> Адреса</label
+                >
+                <input
+                  type="text"
+                  id="adr"
+                  name="address"
+                  placeholder="Область,дім,номер квартири"
+                />
+                <label for="city"><i class="fa fa-institution"></i> Город</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Київ"
+                />
+                  <div class="col-50">
+                    <label for="zip">Поштовий індекс</label>
+                    <input
+                      type="text"
+                      id="zip"
+                      name="zip"
+                      placeholder="10001"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <h3>Оплата</h3>
+                <label for="fname">Картки, що приймаються до оплати</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color: navy"></i>
+                  <i class="fa fa-cc-amex" style="color: blue"></i>
+                  <i class="fa fa-cc-mastercard" style="color: red"></i>
+                  <i class="fa fa-cc-discover" style="color: orange"></i>
+                </div>
+                <label for="cname">Ім'я на картці</label>
+                <input
+                  type="text"
+                  id="cname"
+                  name="cardname"
+                  placeholder="Повне ім'я"
+                />
+                <label for="ccnum">Номер кредитної картки</label>
+                <input
+                  type="text"
+                  id="ccnum"
+                  name="cardnumber"
+                  placeholder="1111-2222-3333-4444"
+                />
+                <label for="expmonth">Придатність до</label>
+                <input
+                  type="month"
+                  id="expmonth"
+                  name="expmonth"
+                />
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr" />
+              Адреса доставки збігається з адресою виставлення рахунку
+            </label>
+            <input type="submit" value="Підтвердити" class="btn" />
+            <p><input list="phonesList" type="text" name="model" placeholder="Виебірть модель" /></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-25">
+        <div class="container">
+          <datalist id="phonesList">
+            <option value="iPhone 13">43000</option>
+            <option value="iPhone 11">35000</option>
+            <option value="iPhone 13 pro">50000</option>
+            <option value="iPhone 10XR">20000</option>
+        </datalist>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

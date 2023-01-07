@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <input
+          list="gender"
+          type="text"
+          name="gender"
+          placeholder="Виберіть стать"
+        />
+      </p>
+      <h2>Виберіть браузери якими користуєтесь</h2>
+        <form>
+            <p>
+                <input type="checkbox" checked name="google"/>Google
+            </p>
+            <p>
+                <input type="checkbox" name="firefox"/>Firefox
+            </p>
+            <p>
+                <input type="checkbox" name="Explorer"/>Explorer
+            </p>
+            <h2>Вкажіть стать</h2>
+            <p>
+                <input type="radio" value="man" checked name="gender"/>чоловіча
+            </p>
+            <p>
+                <input type="radio" value="woman" name="gender"/>жіноча
+            </p>
+            <h2>Виберіте категорію</h2>
+            <p>
+                <input type="radio" value="A" checked name="category"/>A
+            </p>
+            <p>
+                <input type="radio" value="B" name="category"/>B
+            </p>
+            <p>
+                <input type="radio" value="C" name="category"/>C
+            </p>
+            <p>
+            <label for="Height">Ріст: </label>
+            <input name="Height" type="range" id="Height" min="120" max="230" 
+            step="1"
+            oninput="this.nextElementSibling.value = this.value"/>
+            <output>175</output>
+            </p>
+            <p>
+                <label for="date">Дата народження: </label>
+                <input type="date" id="date" name="date"/>
+            </p>
+            <h2>Напишіть про себе</h2>
+            <textarea></textarea>
+            <p>
+                <input type="reset">Відмінити  </input>
+                <button type="submit">Відправити</button>
+            </p>
+    </form>
+    <datalist id="gender">
+      <option value="чоловіча"></option>
+      <option value="жіноча"></option>
+    </datalist>
+  </body>
+</html>
